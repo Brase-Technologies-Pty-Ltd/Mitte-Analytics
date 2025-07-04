@@ -1,0 +1,21 @@
+requests
+Pillow
+numpy
+opencv-python
+torch
+torchvision
+pytorch-lightning
+pyzbar
+ultralytics
+configparser
+meraki-sdk
+meraki
+dynamsoft_barcode_reader_bundle
+boto3
+pylibdmtx
+ 
+# Packages to be installed via apt-get
+# sudo apt-get install libzbar0
+# sudo apt-get install libgl1-mesa-glx
+# sudo apt install libgl1
+ 

@@ -1,0 +1,8 @@
+.custom-white-close .btn-close {
+    filter: brightness(0) invert(1);
+    /* Makes it white */
+}
+
+.modal-title {
+    margin-bottom: 0 !important;
+}

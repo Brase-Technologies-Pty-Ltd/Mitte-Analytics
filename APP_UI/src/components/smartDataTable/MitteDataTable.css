@@ -1,0 +1,160 @@
+/* General Table Styling */
+.smart-fridge-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--careis-border-color);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #335ba5 !important;
+}
+
+/* Header Section */
+.smart-fridge-table table thead {
+  background-color: #fff;
+  color: #004595;
+}
+
+.smart-fridge-table table thead tr {
+  border: 1px solid rgb(199, 193, 193);
+}
+
+.smart-fridge-table table th {
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+  background-color: #fff;
+  color: #004595;
+}
+
+.smart-fridge-table table th:last-child {
+  border-right: 1px solid black;
+}
+
+.smart-fridge-table table th:first-child {
+  border-left: 1px solid black;
+}
+
+/* Table Body */
+.smart-fridge-table table td {
+  padding: 10px;
+  line-height: 1.5;
+  max-width: 320px;
+  vertical-align: middle;
+  border: 1px solid var(--careis-border-color);
+}
+
+/* Alternate Row Colors */
+.smart-fridge-table table tbody tr:nth-child(even) {
+  background-color: #d3d3d4;
+}
+
+.smart-fridge-table table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Center Text for Specific Columns */
+.smart-fridge-table table th.center,
+.smart-fridge-table table td.center {
+  text-align: start;
+}
+
+/* Sort Icons */
+.smart-fridge-table .sort-single-icon-grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.smart-fridge-table .sort-icon-fa {
+  color: rgb(99, 97, 97);
+}
+
+.sort-icon-inactive {
+  opacity: 0.3;
+}
+
+/* Cursor Pointer for Sortable Columns */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Pagination Styles */
+.smart-fridge-table .table-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 0;
+  background: var(--careis-form-bg-color);
+  border-top: 1px solid var(--careis-border-color);
+}
+
+.table-pagination .current-page-number-control {
+  padding: 1px;
+  text-align: center;
+  border: 1px solid var(--careis-border-color);
+  border-radius: 4px;
+  color: var(--careis-primary-bg-color);
+  background: white;
+}
+
+.table-pagination .btn-page-control {
+  background: transparent;
+  padding: 4px 8px;
+  border: 1px solid var(--careis-border-color);
+  border-radius: 4px;
+  color: var(--careis-primary-bg-color);
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.2rem;
+}
+
+.table-pagination .btn-page-control:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.sort-icon-grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+}
+
+.sort-single-icon-grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.sort-icon-fa {
+  margin: 0;
+  padding: 0;
+  height: 6px;
+  color: rgb(183, 181, 181);
+}
+
+.sort-single-icon-grid:hover .sort-icon-fa {
+  color: black;
+}
+
+/* .table-pagination .btn-page-control:not(:disabled):hover {
+    background: var(--careis-primary-bg-color);
+    color: white;
+} */
+
+@media screen and (max-width: 678px) {
+  .smart-fridge-table {
+    overflow: scroll;
+  }
+}

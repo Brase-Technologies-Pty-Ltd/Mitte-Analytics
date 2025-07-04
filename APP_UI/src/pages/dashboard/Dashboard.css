@@ -1,0 +1,41 @@
+.card-pareant {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+}
+
+.DashboardTitleText {
+    color: #00000080;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.16px;
+    margin: 0%;
+}
+
+.card_details {
+    min-height: 75px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.CommonText {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.CommonTextCount {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px
+}
